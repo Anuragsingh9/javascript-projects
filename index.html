@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="images/calculator.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head> 
+<body>
+<div class="container">
+    <div class="main-body">
+        <div class="calculator-body">
+            <div class="display">
+                <h1 id="result"></h1>
+            </div>
+            <div class="pad">
+                <div class="keypad">
+                    <div class="key" id="seven" onClick="getIdName(this.getAttribute('id'));">7</div>
+                    <div class="key" id="eight" onClick="getIdName(this.getAttribute('id'));">8</div>
+                    <div class="key" id="nine" onClick="getIdName(this.getAttribute('id'));">9</div>
+                    <div class="key" id="add" onClick="getIdName(this.getAttribute('id'));">+</div>
+                </div>
+                <div class="keypad">
+                    <div class="key" id="four" onClick="getIdName(this.getAttribute('id'));">4</div>
+                    <div class="key" id="five" onClick="getIdName(this.getAttribute('id'));">5</div>
+                    <div class="key" id="six" onClick="getIdName(this.getAttribute('id'));">6</div>
+                    <div class="key" id="minus" onClick="getIdName(this.getAttribute('id'));">-</div>
+                </div>
+                <div class="keypad">
+                    <div class="key" id="three" onClick="getIdName(this.getAttribute('id'));">3</div>
+                    <div class="key" id="two" onClick="getIdName(this.getAttribute('id'));">2</div>
+                    <div class="key" id="one" onClick="getIdName(this.getAttribute('id'));">1</div>
+                    <div class="key" id="multiply" onClick="getIdName(this.getAttribute('id'));">*</div>
+                </div>
+                <div class="keypad">
+                    <div class="key" id="dot" onClick="getIdName(this.getAttribute('id'));">.</div>
+                    <div class="key" id="zero" onClick="getIdName(this.getAttribute('id'));">0</div>
+                    <div class="key" id="devide" onClick="getIdName(this.getAttribute('id'));">/</div>
+                    <div class="key" id="equal" onClick="doMath(this.getAttribute('id'));">=</div>
+                </div>  
+                <div class="keypad">
+                    <div class="clear" id="clearScreen" onclick="clearScreen()">
+                        <b>Reset</b>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function getIdName(elmentIdName){
+        var result = document.getElementById('result').innerHTML;
+        var value = document.getElementById(`${elmentIdName}`).innerHTML
+        console.log(result);
+        var lastChar = result.slice(-1);
+        result += value; 
+        document.getElementById('result').innerHTML = result
+        var symbols = ['+','*','.','/'];
+        if(lastChar.includes(result.slice(-1))){
+            alert('Please give valid inputs');
+            clearScreen();
+        }
+        console.log(result.slice(-1))
+        window.value=result
+    }
+
+    function doMath(name){
+        var result = eval(window.value)
+        if(result == undefined){
+            result = "";
+        }
+        document.getElementById('result').innerHTML=result;
+    }
+
+    function clearScreen(){
+        document.getElementById('result').innerHTML="";
+    }
+
+    function validateInput(inputs){
+        console.log(inputs);
+        console.log(result.slice(-1))
+    }
+</script>
+</body>   
+</html>
