@@ -55,7 +55,7 @@
         result += value; 
         document.getElementById('result').innerHTML = result
         var symbols = ['+','*','.','/','-'];
-        if(symbols.includes(lastChar)){
+        if(symbols.includes(lastChar) && symbols.includes(value)){
             alert('Please give valid inputs');
             clearScreen();
         }
