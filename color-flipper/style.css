@@ -1,0 +1,51 @@
+.page{
+    background-color: royalblue;
+}
+.centered-div{
+    width: 400px;
+    height: 50px;
+    /* background-color: red; */
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+}
+.change-color-desc{
+    width: 300px;
+    height: auto;
+    background-color: #333633;
+    margin: auto;
+    font-size: 25px;
+    padding: 20px;
+    color: white;
+    border-radius:15px
+}
+.change-color-desc>div{
+    display: contents;
+    color: turquoise;
+}
+.color-value{
+    text-align: center;
+}
+.btn-box{
+    text-align: center;
+}
+.btn-change-color{
+    width: 136px;
+    border: 1px solid #f9f7f7;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+}
+.btn-change-color:hover{
+    color: red;
+    cursor: pointer;
+}
