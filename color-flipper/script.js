@@ -16,6 +16,9 @@ const targetElement = {
         var newHexCode = rgbToHex(newColorArray[0],newColorArray[1],newColorArray[2])
         console.log(newHexCode)
         element.style.backgroundColor = newHexCode;
+        var colorCode = document.querySelector('.color-code')
+        colorCode.innerHTML = newHexCode
+        colorCode.style.color = newHexCode
     }),
 };
 

@@ -25,7 +25,7 @@
 }
 .change-color-desc>div{
     display: contents;
-    color: turquoise;
+    color: #4169e1;
 }
 .color-value{
     text-align: center;
