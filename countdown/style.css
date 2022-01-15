@@ -1,0 +1,58 @@
+body{
+    background-image: linear-gradient(to right, #d37e7e , #d1d174);
+}
+.centered{
+    background-image: linear-gradient(to right, black, transparent);
+    color: red;
+    width: 250px;
+    height: 150px;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+.seconds-counter{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+}
+.click-btn{
+    background-image: linear-gradient(to right, black, transparent);
+    width: 90px;
+    height: auto;
+    border-radius: 20px;
+    background-color: #92935a;
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    color: #ddebeb;
+    cursor: pointer;
+}
+.otp-desc{
+    color: #fbf9f9;   
+}
+.input-timer{
+    margin: auto;
+    text-align: center;
+}
+.input-timer input{
+    width: 250px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+.input-timer input:focus{
+    background-color: #e5eaeb;
+}
+.input-timer input::placeholder{
+    padding-left: 10px;
+}
