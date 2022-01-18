@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <script rel="text/javascript" src="app.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <div class="centered">
+        <div class="todo-desc"><b>My Todo List</b></div>
+            <div class="input-box">
+                <input type="text" placeholder="Add title" id="input-value" onfocus="this.value=''">
+                <div class="add-btn" onclick="addItem()">ADD</div>
+            </div>
+            <div class="todo-list">
+                    <ul class="group-list" id="list">
+                        
+                    </ul>
+            </div>
+    </div>
+</div>
+</body>
+</html>
+<!-- <li class="list-item" id="list-item1"><span  id="description">&#10004; singh </span><span class="close">&times;</span></li>
+                        <li class="list-item" id="list-item1"><span  id="description">&#10004; Anurag1 singh </span><span class="close">&times;</span></li> -->
