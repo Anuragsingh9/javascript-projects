@@ -1,0 +1,23 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #a0abab;
+}
+.centred{
+    /*border: 1px solid black;*/
+    margin: auto;
+    text-align: center;
+    width: 440px;
+    height: auto;
+    margin-top: 150px;
+}
+form{
+    height: auto;
+}
+.form{
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 6px;
+    background-color: aliceblue;
+}
+
