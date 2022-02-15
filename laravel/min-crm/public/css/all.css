@@ -192,9 +192,21 @@ li .nav-link:hover{
      left: 27px;
      display: none;
  }
+ .remove-file{
+     position: relative;
+     bottom: -30px;
+     left: 47px;
+     display: none;
+ }
+
 .avatar:hover .file-upload{
+    display: inline;
+    opacity: 1;
+}
+.avatar:hover .remove-file{
     display: block;
     opacity: 1;
+    cursor: pointer;
 }
 .camera {
     display: none;

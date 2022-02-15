@@ -11,16 +11,19 @@ class UserController extends Controller
 {
     public function updateUserProfile(Request $request) {
         try {
+
             $user = Auth::user();
             $path = $user->avatar;
             if ($request->avatar) {
                 $file = $request->avatar;
                 $path = $file->storeAs('bucket', time() . $file->getClientOriginalName(),'public');
             }
-
+            if ($request->has('remove')){
+                $path = '';
+            }
             User::whereId($user->id)->update([
-                'fname' => $request->fname,
-                'lname' => $request->lname,
+                'fname' => $request->input('fname',$user->fname),
+                'lname' => $request->input('lname',$user->lname),
                 'avatar' => $path,
             ]);
 

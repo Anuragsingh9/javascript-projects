@@ -3,11 +3,15 @@
     <div class="profile-card">
         <form method="post" action="{{route('update-profile')}}" enctype="multipart/form-data">
             @csrf
+            <meta name="csrf-token" content="{{ csrf_token() }}" />
             @php($user= \Illuminate\Support\Facades\Auth::user())
             <div class="avatar">
                 @if($user['avatar'] = $user['avatar'] ? $user['avatar'] :config('constant.default.images.user_default'))
                 @endif
-                <img src={{asset('storage/'.$user['avatar'])}}
+                    <div class="remove-file">
+                        <i class="fas fa-times-circle" id="cross-btn"></i>
+                    </div>
+                    <img src={{asset('storage/'.$user['avatar'])}}
                       alt="">
                 <div class="file-upload">
                     <input type="file" placeholder="none" name="avatar">
@@ -37,4 +41,25 @@
             </div>
         </form>
     </div>
+        <script>
+            $(document).ready(function(){
+            $("#cross-btn").click(function(){
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                $.ajax({url: "{{route('update-profile')}}",
+                    method: 'post',
+                    data:
+                        {
+                            remove:1
+                        },
+                    async: false,
+                    success: function(result) {
+                        location.reload();
+                    }});
+            });
+        });
+    </script>
 @endsection
