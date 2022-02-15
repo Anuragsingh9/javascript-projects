@@ -1,0 +1,208 @@
+.header_logo{
+    width: 100px;
+    height: 60px;
+}
+.company-signin{
+    margin-bottom: 80px;
+}
+.sign-form{
+    max-width: 425px;
+    height: auto;
+    border: black;
+    text-align: center;
+    margin: auto;
+    margin-top: 35px;
+    padding: 45px 0 20px 0px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sign-item{
+    width: 300px;
+    height: 46px;
+    border: 1px solid #938a8a;
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.sign-item:hover{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #25243a;
+}
+
+.sign-item input{
+    width: 215px;
+    height: 35px;
+    border: none;
+    padding-top: 6px;
+}
+
+.sign-item label{
+    position: absolute;
+    margin: -13px;
+    background-color: white;
+    padding: 3px;
+    font-size: 12px;
+}
+/*.sign-item label:hover{*/
+/*    font-size: 15px;*/
+/*}*/
+.sign-button input{
+    width: 300px;
+    background: #25243a;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    height: 30px;
+}
+.sign-item input:focus {
+    outline: none;
+}
+.sign-form p{
+    color: #938a8a;
+}
+.sign-desc{
+    font-size: larger;
+    color: #25243a!important;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.register-form{
+    max-width: 644px;
+    height: auto;
+    margin: auto;
+    margin-top: 45px;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row{
+    width: 500px;
+    text-align: center;
+    margin: auto!important;
+    padding: 10px;
+}
+.reg-desc{
+    font-weight: bold;
+    color: #444087 !important;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+.reg-btn{
+    background: #25243a!important;
+    color: white!important;
+}
+.reg-btn:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+hr{
+    margin:0!important;
+    background-color:#25243a!important;
+}
+.auth-header li{
+    float: right;
+}
+#mynavbar ul li{
+    padding: 0 10px;
+}
+li .nav-link {
+    color: white!important;
+    /*font-weight: bold;*/
+    text-transform: uppercase;
+}
+li .nav-link:hover{
+    text-decoration: underline #B0DBDBFF;
+}
+.logout{
+    color: white!important;
+    text-decoration: none;
+}
+.logout:hover{
+    text-decoration: underline;
+}
+.fa-power-off{
+    color: #8D8DEFFF;
+}
+.nav{
+    padding: 0;
+}
+.profile-card{
+    max-width: 800px;
+    height: 70%;
+    margin: auto;
+    margin-top: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.avatar{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    position: relative;
+    top: 32px;
+}
+.avatar img{
+    width: 150px;
+    height: 150px;
+    padding: 10px 10px;
+    border-radius: 75px;
+}.profile-field{
+    width: 100%;
+    height: auto;
+    border-top: 2px solid #aba3a3;
+    padding: 40px 0;
+
+ }
+ .item{
+     display: inline;
+     margin-left: 9px;
+     padding-bottom: 20px;
+ }
+ .item input{
+     width: 48%;
+     display: inline;
+     margin: auto;
+ }
+ .profile-row{
+     margin:10px 10px;
+ }
+ .update-btn{
+     text-align: center;
+     padding-top: 20px;
+ }
+ .update-btn input{
+     background: #4386bb;
+     border: none;
+     color: white;
+     width: 95px;
+     height: 35px;
+     border-radius: 4px;
+     font-size: 12px;
+     font-weight: bold;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ .update-btn input:hover{
+     background-color: #1b649f;
+ }
+ .file-upload{
+     position: relative;
+     bottom: 65px;
+     left: 27px;
+     display: none;
+ }
+.avatar:hover .file-upload{
+    display: block;
+    opacity: 1;
+}
+.camera {
+    display: none;
+}
+.avatar:hover .camera{
+    position: relative;
+    bottom: 60px;
+    display: block;
+    font-size: 40px;
+    opacity: 0.8;
+}
