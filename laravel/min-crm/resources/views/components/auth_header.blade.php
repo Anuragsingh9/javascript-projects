@@ -13,10 +13,17 @@
                                 <a class="nav-link" href="javascript:void(0)">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)">List</a>
+                                <a class="nav-link" href="{{route('users-list')}}">List</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0)">Profile</a>
+                                <a class="nav-link" href="{{route('dashboard')}}">Profile</a>
+                            </li>
+                            <li class="nav-item add-user">
+                                <a class="nav-link">Add User</a>
+                                <ul class="upload-type">
+                                    <li><a href="{{route('import-view')}}">Upload File</a></li>
+                                    <li><a href="{{route('manually-add-view')}}">Add Manually</a></li>
+                                </ul>
                             </li>
                         </ul>
                         <div class="d-flex">
